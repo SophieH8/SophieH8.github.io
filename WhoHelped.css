@@ -66,6 +66,7 @@ nav{
     font-size: 14px;
     color: #fff;
     transition: 0.5s;
+    text-align: center;
 }
 
 .text-box p:hover{
@@ -102,7 +103,7 @@ h1{
 }
 
 a{
-    color: #777;
+    color: #000;
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
@@ -110,12 +111,14 @@ a{
     transition: 0.5s;
 }
 a:hover{
-    color: #f80a96;
+    color: #f80a;
 }
 
 p{
-    color: #777;
-    font-size: 14px;
+    color: #000;
+    font-family: "Times New Roman", serif;
+    text-align: left;
+    font-size: 12px;
     font-weight: 400;
     line-height: 22px;
     padding: 10px;
