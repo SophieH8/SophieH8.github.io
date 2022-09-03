@@ -88,3 +88,27 @@ color: #bb5
     transition: 1.25s;
 }
 
+footer {
+    text-align: center;
+    color: #c7fbf0;
+    font-weight: 500;
+    background-color: #2f4857;
+    padding: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: 1s;
+}
+footer a {
+    color: #47f6fa;
+    transition: 1s;
+}
+
+footer a:hover{
+    color: #0c8f99;
+}
+
+footer:hover {
+    background-color: #c7fbf0;
+    color: #2f4857;
+}
+		
