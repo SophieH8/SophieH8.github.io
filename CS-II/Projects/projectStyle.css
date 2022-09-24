@@ -152,9 +152,11 @@ p{
 p:hover{
     color: #ddf398;
 }
-.row{
+.questions{
     margin-top: 5%;
 }
+
+    
 .question-col{
     flex-basis: 100%;
     background: #add7ea;
