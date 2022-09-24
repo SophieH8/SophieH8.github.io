@@ -7,6 +7,9 @@
     min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(70,2,30,0.8),rgba(4,9,40,0.8));
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 nav{
     display: flex;
@@ -60,7 +63,7 @@ nav{
 .text-box p{
     text-align: center;
     margin: 10px 0 20px;
-    padding-left: 10px;
+    
     font-size: 14px;
     color: #fff;
     transition: 0.5s;
@@ -70,18 +73,44 @@ nav{
 color: #bb5
 }
 
-.text-box a{
-    font-size: 150px;
-    color: #fff;
-    transition: 1.25s;
-    text-decoration: none;
-}
-.text-box a:hover{
-    color: #ffcc1b;
-    
+/*      ISP       */
+
+.aboutme{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
 }
 
-/*    Questionsssss */
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.me-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    justify-content: space-between;
+}
+.me-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.me-col p{
+    padding: 0;
+}
+.me-col h3{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 20px;
+}
+
+
+/*    Optimal Sort */
 
 .questions{
     width: 60%;

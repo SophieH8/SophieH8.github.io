@@ -21,6 +21,7 @@ nav{
 .nav-links{
     flex: 1;
     text-align: right;
+    margin-right: 2.5%;
 }
 .nav-links ul li{
     list-style: none;
@@ -153,4 +154,35 @@ h3{
 .classes-col:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.3);
 }
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1;
+    width: 125px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #FF2E8F;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 
