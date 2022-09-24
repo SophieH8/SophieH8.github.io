@@ -136,7 +136,7 @@ p:hover{
     justify-content: space-between;
 }
 .classes-col{
-    flex-basis: 100%;
+    flex-basis: 31%;
     background: #FFFF66;
     border-radius: 10px;
     margin-bottom: 5%;
