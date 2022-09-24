@@ -70,13 +70,13 @@ nav{
 color: #bb5
 }
 
-.text-box a{
+.text-box h2{
     font-size: 150px;
     color: #fff;
     transition: 1.25s;
     text-decoration: none;
 }
-.text-box a:hover{
+.text-box h2:hover{
     color: #ffcc1b;
     
 }

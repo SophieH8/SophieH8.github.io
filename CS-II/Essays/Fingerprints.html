@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Digital Portfolio</title>
-    <link rel="stylesheet" href="Fingerprints.css">
+    <link rel="stylesheet" href="styleEssay.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
 	<div class="text-box">
 	  <h1>Fingerprints</h1>
 	  <p>Sophie Hews</p>
-	  <h2><a href="essays.html">&#10050;</a></h2>
+	  <h2>&#10050;</h2>
 	</div>
       </div>
       </section>
@@ -39,10 +39,14 @@
 	    <h4>STEAM Center</h4>
 	    <h4>Computer Science II</h4>
 	    <h4>Mr. Ben-Yaakov</h4>
-	    <h4>August 25, 2022</h4>	    
+	    <h4>August 25, 2022</h4>
+	    <h3 class="paraheader"><em>MITM & HTTPS</em></h3>
 	    <p>Being a cooperative public data network, the Internets data traffic flows throughout the globe on a variety of intermediate carriers. However, with all of this traffic how can we tell if we are really linked to the correct website. In past years most websties used HTTP, but it had a flaw where outside parties could acess the website and steal your data. Some outside parties used MITM which "stands for man in the middle attack" (Imperva, 2019). It is a form of data eavesdropping where an attacker "intercepts data from a conversation between the sender and reciepient" (Imperva, 2019). An attacker can obtain private informations, like "credit card details or passwords", silently without makeing either party aware of the eaves dropping (Imperva, 2019). This led to the creation of HTTPS, the S stands for secure.The two primary purposes of a secure HTTPS connections are to protect users' "security and privacy" (GRC, n.d.). It is supposed to be "authenticated, secured, encrypted", and not open to any form of "eavesdropping from an outside party" (GRC, n.d.).</p>
+	    <h3 class="paraheader"><em>HTTPS Proxy Appliances</em></h3>
 	    <p>This increased safety however led to what the US FBI calls the "Going Dark Problem" (GRC, n.d.). Institutions have lossed visibily of their peopl's Internet usage so they developed HTTPS Proxy Aplliancces. HTTPS Proxy Appliancase circumvent Internet browser privacy and safety, and it's users have no privacy or security. It inspects all content to determine whether it it follows policies the local network is enforcing. Although I understand why schools/government/ISP can eavesdrop on peoples communications, I don't like the idea of having someone seeing be able to view my Internet data. Again though, I understand where they are coming from so I guess the answer would be yes they do have the right to eavesdrop on your communications. For example, if someone is acting suspicious, local police could be able to get the information and keeps tabs on them.However, this SSL Proxy Appliance cannot be prevented, but it can by detected. </p>
+	    <h3 class="paraheader"><em>Certificate Authorities</em></h3>
 	    <p>This brings CAs into play. A CA, Certificate Authorities, to whom web sites prove their identity in the real world using various documentations. When a website has proven its identity with certainty the CA will digitally sign a site's security certificate whcih contains an assertion of its identity. Public and Private keys are matched pairs and the private cryptographic key is never publicly disclosed. Since the HTML Proxy Appliance does not have the private key of the remote server, the fake certificate the HTTPS Proxy provides is forced to use a different public key for which it does have a matching private key. Which means the certificate's public key must be different. If they are different, there is most likely an SSL interception happening. Hashes are mathematical algorithms that process ever single bit of what they recieve, which means that if one bit inside the certificate is changed will result in a different fingerprint. </p>
+	    <h3 class="paraheader"><em>False Positives</em></h3>
 	    <p>False-positives can happen because larger web sites have many different security certificates, and not everyone gets the same on. This could mean if people were to compare fingerprints, they could conclude that they were being intercepted when in reality, they just recieved a different ceritificate.</p>
 	  </div>
 	  <img src="https://codermerlin.com/users/sophie-hews/digitalPortfolioImages/fojfow.png" alt="flowchart">
