@@ -271,6 +271,40 @@ color:#FD1B85
 .classes-col:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
 }
+.classes-col h4{
+    text-align: left;
+    padding: 10px;
+}
+
+.second-header h3{
+    font-size: 25px;
+    color: #023020;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+.second-header h3:hover{
+    color: #92FF01;   
+}
+
+.second-header h4{
+    font-size: 20px;
+    color: #301934;
+    text-align: left;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.5s;
+}
+.second-header h4:hover{
+    color: #F28C28;   
+}
+
+.second-header p{
+    margin-top: 10px;
+}
+
+
 
 /** large columns **/
 .large-col {
