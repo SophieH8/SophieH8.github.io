@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>AdvancedSort</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class="header">
+      <div>
+	<nav>
+	  <div class="nav-links">
+	    <ul>
+	      <li><a href="../../index.html">HOME</a></li>
+	      <li><a href="Projects/AdvancedSorts.html">ADVANCED SORTS</a></li> 
+	    </ul>
+	    </div>
+	</nav>
+
+	<div class="text-box">
+	  <h1>Advanced Sort Algorithms</h1>
+	  <p>Sophie Hews</p>
+	</div>
+      </div>
+      </section>
+
+    <section class="questions">
+      <div class="row">
+	<div class="question-col">
+	  	  <div class="question-col">
+	    <h1>Advanced Sorting Algorithms</h1>
+	    <h4>Sophie Hews</h4>
+	    <h4>STEAM Center</h4>
+	    <h4>Computer Science III</h4>
+	    <h4>Mr. Ben-Yaakov</h4>
+	    <h4>September 1, 2023</h4>
+		  </div>
+	</div>
+      </div>
+    </section>
+    
+    <section class="pastClasses">
+
+      <div class="row">
+	<div class="large-col">
+	  <h1>Introduction</h1>
+	  <div class="row">
+	<div class="classes-col">
+	  <p>Sorting algorithms are methods of arranging data in a certain order, usually ascending or descending. There are several different algorithms, each with their own differing space and time complexities, as well as advantages and disadvantages. The discussion below will articulate three specific sorting algorithms, Mergesort, Quicksort, and Heapsort, as well as their advantages and disadvantages.
+</p>
+	</div>
+	  </div>
+	  
+	</div>
+      </div>
+
+            <div class="row">
+	<div class="large-col">
+	  <h1>Merge Sort</h1>
+	  <div class="row">
+	    <div class="classes-col">
+	      <h3 class="paraheader"><em>Introduction To Merge Sort</em></h3>
+	      <p>Merge Sort is a divide-and-conquer sorting algorithm that works by breaking down an original array into uniform halves recursively until the array cannot be further divided (only one element remains in each subarray). If there are an odd number of elements and the array cannot be split evenly, the odd element will be allocated to either the right or left array. After dividing the array, this algorithm then sorts and merges the sorted subarrays back together to create a final sorted array.</p>
+	      <h3 class="paraheader"><em>Example Diagram</em></h3>
+	      <img src="https://cdn.kastatic.org/ka-perseus-images/ace963383bea8d154f6abd1322a06a73b56b4628.png">
+	      <p>As shown in this diagram, merge sort initially finds the position midway through the array , the diagram labels it as q, and splits the array in half (p represents the first element and r is the last element in each subarray). The algorithm then continuously finds the middle of each subarray and splits those in half, repeating this step until each element is alone. When they are in their simplest form, the algorithm proceeds to merge and sort the subarrays together. It repeats this step until all of the elements are sorted together in one array.</p>
+	      <h3 class="paraheader"><em>Time Complexity</em></h3>
+	      <p>The time complexity of merge sort is O(Nlog(N)). For all three cases (best, worst, and average), is O(Nlog(N)) because of merge sort divides into seperate halves, and then later merges those halves when sorting.</p>
+	      <h3 class="paraheader"><em>Space Complexity</em></h3>
+	      <p>The space complexity for merge sort is O(N).</p>
+	      <h3 class="paraheader"><em>Advantages & Disadvantages</em></h3>
+	      <p>One advantage is that merge sort is a stable sorting algorithm, meaning it maintains the relative position of elements in the final array. Also, because the time complexity of merge sort is o(Nlog(N)) in both the best and worst cases, merge sort tends to be more efficient with large datasets, but less efficient in smaller ones. Merge sort usually requires more memory than other sorts because of the subarrays which require extra temporary memory.</p>
+	</div>
+	  </div>
+	  
+	</div>
+      </div>
+
+            <div class="row">
+	<div class="large-col">
+	  <h1>Quick Sort</h1>
+	  <div class="row">
+	    <div class="classes-col">
+		      <h3 class="paraheader"><em>Introduction To Merge Sort</em></h3>
+	      <p>Like Merge Sort, Quick Sort is another divide-and-conquer sorting method that uses recursion to sort an array. Contrary to Merge Sort, however, Quick Sort begins by choosing any element in the array as a pivot. The time complexity varies greatly with the selection of this pivot value. After selecting the pivot element, the algorithm places the pivot in its correct position by partitioning all of the smaller elements to the left of the pivot and all of the larger elements to the right. It then selects a new pivot element in each subarray, slowly sorting the elements with the smaller numbers on the left and larger ones on the right. Since the partitioning is done recursively, repeatedly selecting and placing pivots in their correct spot in the sorted array creates the final sorted array.</p>
+	      <h3 class="paraheader"><em>Example Diagram</em></h3>
+	      <img src="https://cdn.kastatic.org/ka-perseus-images/9876d4dc59e01a4742860ae1831c20f654ed7959.png">  
+	      <p>In this diagram, the first step is to choose an element as the pivot, represented as q, it then partitions the numbers less than the pivots to the left and larger numbers to the right of the pivot. By doing this the number '6' in the diagram is now in its correctly sorted position in the array. New pivot numbers are chosen on both the left and the right side of '6' and once again the numbers smaller than the pivot move to the left and larger to the right. this continues until the entire array is sorted.</p>
+	      <h3 class="paraheader"><em>Time Complexity</em></h3>
+	      <p>The best-case time complexitity for Quick Sort is O(Nlog(N)), this mainly happens when the selected pivot divides the array into similar size halves, making equal partitions and efficient sorting. This also happens to be one of the fastest sorting algorithms because the average time complexity is also O(Nlog(N)). However, the worst case time complexity is O(n^2), which normally occurs when the chosen pivots result in very unequal partitions.</p>
+	      <h3 class="paraheader"><em>Space Complexity</em></h3>
+	      <p>The space complexity of quick sort is [[[[[[]]]]]]], this shows that quick sort is good for sorting even with limited space.</p>
+	      <h3 class="paraheader"><em>Advantages & Disadvantages</em></h3>
+	      <p>Quick sort is one of the fastest sorting algorithms and is very efficient on larger sets of data. However, if a bad pivot is chose, it's worst-case time complexity is O(N^2), making it very slow in the worst case scenario. Thus, it isn't a good choice for smaller sets of data and should be used on larger ones. It also requires only a small amount of memory to function because partitioning happens within the original array. Also, Quick Sort isn't a stable sort, meaning the relative order of the elements will not be preserved in the output.</p>
+	</div>
+	  </div>
+	  
+	</div>
+	    </div>
+
+	          <div class="row">
+	<div class="large-col">
+	  <h1>Heap Sort</h1>
+	  <div class="row">
+	    <div class="classes-col">
+	      <h3 class="paraheader"><em>Complete Binary Tree</em></h3>
+	      <p>A Complete Binary Treee is a special type of Binary Tree, a data structure where each node has no more than two children, where the levels of the tree are completely filled except for the lowest level. Some terminology to help understand a Complete Binary Tree better include the root, child, sibling, degree of node, level, and height. Root is the first node, or a node where no edge/line is coming from a parent. A child is a not with some edge/line coming from the parent node. Nodes that have the same parent node are called siblings. The degree of a node are the number of children a specific parent node has. Levels are the number of nodes in a path to reach a specific node. And finally height is the number of edges/lines to reach a specific node. In a complete binary tree all leaves have the same depth.</p>
+	      <h3 class="paraheader"><em>Binary Heap</em></h3>
+	      <p>A Binary Heap is a Complete Binary Tree in which it stores data efficiently to determine the maximum or minimum element based on structure. A Binary Heap can either be a maximum heap or a minimum heap. Max Heaps follow the rule that every node is greater than or equal to its children. Whereas in a Min heap, every node is smaller than or queal to its children.</p>
+	      
+	 	      <h3 class="paraheader"><em>Introduction To Heap Sort</em></h3>
+	      <p>Unlike the two sorts above, Heap Sort is a comparison-based sorting technique using a Binary Heap data structure. Heap Sort is quite similar to finding the smallest element, placing it at the beginning, then repeat that process for the left over elements.</p>
+	      <h3 class="paraheader"><em>Example Diagram</em></h3>
+<!--	      <img src="https://cdn.kastatic.org/ka-perseus-images/ace963383bea8d154f6abd1322a06a73b56b4628.png"> -->
+	      <p></p>
+	      <h3 class="paraheader"><em>Time Complexity</em></h3>
+	      <p></p>
+	      <h3 class="paraheader"><em>Space Complexity</em></h3>
+	      <p></p>
+	      <h3 class="paraheader"><em>Advantages & Disadvantages</em></h3>
+	      <p></p>
+	</div>
+	  </div>
+	  
+	</div>
+		  </div>
+
+		  	<div class="cite-box">
+	  <h4>References</h4>
+	  <p class="hangingindent">Examples of AI (Artificial Intelligence). (n.d.). Javatpoint. Retrieved August 31, 2022, from <a href="https://www.javatpoint.com/examples-of-ai">https://www.javatpoint.com/examples-of-ai</a></p>
+	  <p class="hangingindent">Front page. (2017, November 12). Lethal Autonomous Weapons: Homepage. Retrieved September 1, 2022, from <a href="https://autonomousweapons.org/">https://autonomousweapons.org/</a></p>
+	  <p class="hangingindent">Quader, W. (2019, May 7). Is AI going to do more harm than good? Southtech. Retrieved September 1, 2022, from <a href="https://www.southtechgroup.com/emergence-of-ai/">https://www.southtechgroup.com/emergence-of-ai/</a></p>
+
+	  
+	  </div>
+
+    </section>
+
+	 
