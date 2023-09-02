@@ -84,7 +84,7 @@
 	  <h1>Quick Sort</h1>
 	  <div class="row">
 	    <div class="classes-col">
-		      <h3 class="paraheader"><em>Introduction To Merge Sort</em></h3>
+		      <h3 class="paraheader"><em>Introduction To Quick Sort</em></h3>
 	      <p>Like Merge Sort, Quick Sort is another divide-and-conquer sorting method that uses recursion to sort an array. Contrary to Merge Sort, however, Quick Sort begins by choosing any element in the array as a pivot. The time complexity varies greatly with the selection of this pivot value. After selecting the pivot element, the algorithm places the pivot in its correct position by partitioning all of the smaller elements to the left of the pivot and all of the larger elements to the right. It then selects a new pivot element in each subarray, slowly sorting the elements with the smaller numbers on the left and larger ones on the right. Since the partitioning is done recursively, repeatedly selecting and placing pivots in their correct spot in the sorted array creates the final sorted array.</p>
 	      <h3 class="paraheader"><em>Example Diagram</em></h3>
 	      <img src="https://cdn.kastatic.org/ka-perseus-images/9876d4dc59e01a4742860ae1831c20f654ed7959.png">  
@@ -92,7 +92,7 @@
 	      <h3 class="paraheader"><em>Time Complexity</em></h3>
 	      <p>The best-case time complexitity for Quick Sort is O(Nlog(N)), this mainly happens when the selected pivot divides the array into similar size halves, making equal partitions and efficient sorting. This also happens to be one of the fastest sorting algorithms because the average time complexity is also O(Nlog(N)). However, the worst case time complexity is O(n^2), which normally occurs when the chosen pivots result in very unequal partitions.</p>
 	      <h3 class="paraheader"><em>Space Complexity</em></h3>
-	      <p>The space complexity of quick sort is [[[[[[]]]]]]], this shows that quick sort is good for sorting even with limited space.</p>
+	      <p>The space complexity of quick sort is O(log(N)), this shows that quick sort is good for sorting even with limited space.</p>
 	      <h3 class="paraheader"><em>Advantages & Disadvantages</em></h3>
 	      <p>Quick sort is one of the fastest sorting algorithms and is very efficient on larger sets of data. However, if a bad pivot is chose, it's worst-case time complexity is O(N^2), making it very slow in the worst case scenario. Thus, it isn't a good choice for smaller sets of data and should be used on larger ones. It also requires only a small amount of memory to function because partitioning happens within the original array. Also, Quick Sort isn't a stable sort, meaning the relative order of the elements will not be preserved in the output.</p>
 	</div>
@@ -108,20 +108,22 @@
 	    <div class="classes-col">
 	      <h3 class="paraheader"><em>Complete Binary Tree</em></h3>
 	      <p>A Complete Binary Treee is a special type of Binary Tree, a data structure where each node has no more than two children, where the levels of the tree are completely filled except for the lowest level. Some terminology to help understand a Complete Binary Tree better include the root, child, sibling, degree of node, level, and height. Root is the first node, or a node where no edge/line is coming from a parent. A child is a not with some edge/line coming from the parent node. Nodes that have the same parent node are called siblings. The degree of a node are the number of children a specific parent node has. Levels are the number of nodes in a path to reach a specific node. And finally height is the number of edges/lines to reach a specific node. In a complete binary tree all leaves have the same depth.</p>
+	      <img src="https://www.codesdope.com/staticroot/images/ds/binary_tree3.png">
 	      <h3 class="paraheader"><em>Binary Heap</em></h3>
 	      <p>A Binary Heap is a Complete Binary Tree in which it stores data efficiently to determine the maximum or minimum element based on structure. A Binary Heap can either be a maximum heap or a minimum heap. Max Heaps follow the rule that every node is greater than or equal to its children. Whereas in a Min heap, every node is smaller than or queal to its children.</p>
+	      <img src="https://global-uploads.webflow.com/5d0dc87aac109e1ffdbe379c/60be35c57cf235c93fd9682b_FVDxP61blctuYNaGDkg0M3b5y7sT5_Q7mXcv4oErrjsgyWznzhX_jJ1PSTddvj2SSXWO9c6cxKr4gNzxwSXKKazWhV41M6fqHIAOLe-76M_gdPdpPeldY1jail1WXjwVC81vJtpU.png">
 	      
 	 	      <h3 class="paraheader"><em>Introduction To Heap Sort</em></h3>
-	      <p>Unlike the two sorts above, Heap Sort is a comparison-based sorting technique using a Binary Heap data structure. Heap Sort is quite similar to finding the smallest element, placing it at the beginning, then repeat that process for the left over elements.</p>
-	      <h3 class="paraheader"><em>Example Diagram</em></h3>
-<!--	      <img src="https://cdn.kastatic.org/ka-perseus-images/ace963383bea8d154f6abd1322a06a73b56b4628.png"> -->
-	      <p></p>
+	      <p>Unlike the two sorts above, Heap Sort is a comparison-based sorting technique using a Binary Heap data structure. Heap Sort is quite similar to finding the smallest element, placing it at the beginning, then repeat that process for the left over elements. Heap Sort works by first heapifying the array, using recursion to transform the array into a heap data structure, the delete each Max Heap root node and replacing it with the latter node in the heap. Then the algorithm proceeds to heapofy the root of the heap. It repeats this until the size of the heap is larger than one. The output/sorted array is gained by reversing the order of elements from the input array.</p>
+	      <h3 class="paraheader"><em>Example Diagram</em></h3>     
+	            <img src="https://global-uploads.webflow.com/5d0dc87aac109e1ffdbe379c/6348ec4023c229d35fe7b254_OHZRQlkqEKg05vRf_SVRWtXckOGZi1-JWsJCSxu7W6DCK1z4ZIDsEqu6Ib2oFQjPWf31D705G80t2xC1SymYv8O6buyzoK8NXNxwNkTrPKZDu3cAk9P_JTPGPJ7sNBnwBlCbR1ed93kJxjWKG_bcZooKQlsAGoNqAZEVBorEW5kx2djdadlshdLB3Q.png">
+	      <p>As shown in the diagram above, the first step is heapifying the array, bring the largest element, in this case '91' to the front. Then the algorithm swaps the root element '91' with the last element in the area, which decreases the length of the heap array by one. The array is heapified once more and now the number '77' is the new root node, once again, this root node is swaped with the last element in the array and removed from the heap array. This process is repeated until the array is sorted.</p>
 	      <h3 class="paraheader"><em>Time Complexity</em></h3>
-	      <p></p>
+	      <p>Heap Sort has a time complexity of O(Nlog(N)) in all cases (best & worst).</p>
 	      <h3 class="paraheader"><em>Space Complexity</em></h3>
-	      <p></p>
+	      <p>The space complexity is O(1) because apart from what is needed to hold the original list of elements being sorted, Heap Sort requires no additional memory space to work.</p>
 	      <h3 class="paraheader"><em>Advantages & Disadvantages</em></h3>
-	      <p></p>
+	      <p>With the time complexity of Heap Sort being O(Nlog(N)) in all cases, it is very efficient when sorting big sets of data. However, if the data is more complex, the efficiency will lessen. The minimal memory usage needed by using Heap Sort is another advantage. Heap sort is an unstable sorting algorithm, meaning it would rearrange the relative order of the elements.</p>
 	</div>
 	  </div>
 	  
@@ -130,9 +132,9 @@
 
 		  	<div class="cite-box">
 	  <h4>References</h4>
-	  <p class="hangingindent">Examples of AI (Artificial Intelligence). (n.d.). Javatpoint. Retrieved August 31, 2022, from <a href="https://www.javatpoint.com/examples-of-ai">https://www.javatpoint.com/examples-of-ai</a></p>
-	  <p class="hangingindent">Front page. (2017, November 12). Lethal Autonomous Weapons: Homepage. Retrieved September 1, 2022, from <a href="https://autonomousweapons.org/">https://autonomousweapons.org/</a></p>
-	  <p class="hangingindent">Quader, W. (2019, May 7). Is AI going to do more harm than good? Southtech. Retrieved September 1, 2022, from <a href="https://www.southtechgroup.com/emergence-of-ai/">https://www.southtechgroup.com/emergence-of-ai/</a></p>
+	  <p class="hangingindent">Examples of AI (Artificial Intelligence). (n.d.). Javatpoint. Retrieved August 31, 2022, from <a href="https://www.khanacademy.org/computing/computer-science/algorithms/merge-sort/a/overview-of-merge-sort">https://www.khanacademy.org/computing/computer-science/algorithms/merge-sort/a/overview-of-merge-sort</a></p>
+	  <p class="hangingindent">Front page. (2017, November 12). Lethal Autonomous Weapons: Homepage. Retrieved September 1, 2022, from <a href="https://www.geeksforgeeks.org/merge-sort/">https://www.geeksforgeeks.org/merge-sort/</a></p>
+	  <p class="hangingindent">Quader, W. (2019, May 7). Is AI going to do more harm than good? Southtech. Retrieved September 1, 2022, from <a href="https://www.khanacademy.org/computing/computer-science/algorithms/quick-sort/a/overview-of-quicksort">https://www.khanacademy.org/computing/computer-science/algorithms/quick-sort/a/overview-of-quicksort</a></p>
 
 	  
 	  </div>
